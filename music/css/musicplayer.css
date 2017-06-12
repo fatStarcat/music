@@ -14,7 +14,7 @@ ul{
     bottom:0px;
     box-shadow:0px -3px 5px darkgray;
 }
-/*����*/
+/*����1100px*/
 .misContent{
     width: 82%;
     height: 100%;
@@ -51,10 +51,10 @@ ul{
     width: 40px;
     height: 40px;
 }
-/*������Ϣ ���*/
+/*������Ϣ ���750px*/
 .misInfo{
     height: 100%;
-    width: 750px;
+    width: 55%;
     float: left;
     margin-left:50px;
     /*margin-top:-50px;*/
@@ -85,9 +85,9 @@ ul{
     height: 10px;
     /*overflow: hidden;*/
 }
-/*������*/
+/*������600px*/
 .processor{
-    width: 600px;
+    width: 44%;
     height: 10px;
     margin-top: 5px;
     float: left;
@@ -238,9 +238,9 @@ ul{
     display:none;
     z-index: 2;
 }
-/*�����б�*/
+/*�����б�1000px*/
 .playList{
-    width: 1000px;
+    width: 74%;
     height: 300px;
     position:absolute;
     top:-300px;
@@ -248,17 +248,19 @@ ul{
     border-radius:10px 10px 0 0;
     display:none;
 }
+/*549px*/
 .playListLeft{
     float:left;
-    width: 549px;
+    width: 54.9%;
     height: 100%;
     background:#1f1e1c;
     border-radius:10px 0px 0 0;
     border-right: 1px solid #000000;
 }
+/* 449px */
 .playListRight{
     float:right;
-    width: 449px;
+    width: 44.9%;
     height: 100%;
     background: #1a1a19;
     border-radius:0px 10px 0 0;
