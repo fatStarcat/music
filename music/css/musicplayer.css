@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+ul{
+    list-style:none;
+}
+.musicPlayer{
+    width: 100%;
+    height: 50px;
+    background-color: #2f2e2e;
+    position:fixed;
+    bottom:0px;
+    box-shadow:0px -3px 5px darkgray;
+}
+/*����*/
+.misContent{
+    width: 1100px;
+    height: 100%;
+    margin:0 auto;
+    /*border: 1px solid #fff;*/
+    /*overflow: hidden;*/
+}
+/*���� ��һ�� ��һ��*/
+.misControl{
+    height: 100%;
+    float: left;
+    /*overflow: hidden;*/
+    /*border: 1px solid #fff;*/
+}
+.misControl p{
+    height: 37px;
+    padding-top:13px;
+    float:left;
+    /*border: 1px solid #000;*/
+    margin-left: 5px;
+}
+.misControl p:first-child{
+    margin-left:0px;
+}
+.misControl p:nth-child(2){
+    height: 45px;
+    padding-top:5px;
+}
+.misControl p img{
+    width: 24px;
+    height: 24px;
+}
+.misControl p:nth-child(2) img{
+    width: 40px;
+    height: 40px;
+}
+/*������Ϣ ���*/
+.misInfo{
+    height: 100%;
+    width: 750px;
+    float: left;
+    margin-left:50px;
+    /*margin-top:-50px;*/
+    /*border: 1px solid red;*/
+}
+.misHead{
+    padding: 10px;
+    float:left;
+    /*border: 1px solid #000;*/
+}
+.misOther{
+    float: left;
+    padding: 8px;
+    font-size: 12px;
+}
+.misHead img{
+    width: 30px;
+    height: 30px;
+}
+.misName label:first-child{
+    color: white;
+}
+.misName label:last-child{
+    color: darkgray;
+    margin-left: 10px;
+}
+.misTime{
+    height: 10px;
+    /*overflow: hidden;*/
+}
+/*������*/
+.processor{
+    width: 600px;
+    height: 10px;
+    margin-top: 5px;
+    float: left;
+    background-color: #1b1b1b;
+    border-radius: 20px;
+    position:relative;
+}
+/*���������*/
+.buffbar{
+    /*width: 70%;*/
+    height: 100%;
+    background-color: #515151;
+    border-radius: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*������*/
+.slider{
+    width:0px;
+    height: 100%;
+    /*max-width: 600px;*/
+    background-color: #b91212;
+    border-radius: 20px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*���Ƶ�*/
+.ctrlBox{
+    overflow: hidden;
+    /*width: 250px;*/
+    padding: 50px;
+    /*padding-left:350px;*/
+    position:absolute;
+    top:-54px;
+    right:-60px;
+    text-align: center;
+}
+.controler{
+    width: 16px;
+    height: 15px;
+    padding-top: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    /*position:absolute;*/
+    /*top:38px;*/
+    /*left:50px;*/
+    /*text-align: center;*/
+}
+.controler div{
+    width: 6px;
+    height: 6px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    background-color:#b91212 ;
+}
+/*����ʱ��*/
+.songTime{
+    float: right;
+    margin-left:10px;
+}
+.misTime label{
+    color:darkgray;
+}
+/*չ���б�*/
+.misList{
+    float: right;
+    position:relative;
+}
+.misList p:nth-child(3){
+    padding-top: 5px;
+}
+.misList p:nth-child(3) img{
+    width: 40px;
+    height: 40px;
+}
+/*��������*/
+.ctrlVolume{
+    position:relative;
+}
+.volumeBox{
+    width: 8px;
+    height: 100px;
+    background-color: #1b1b1b;
+    border-radius:20px;
+    position:absolute;
+    top:-120px;
+    left:5px;
+    transform:rotateX(180deg);
+    display:none;
+    z-index: 3;
+    border: 1px solid darkgray;
+}
+.vSlider{
+    width: 100%;
+    height: 0px;
+    border-radius:20px;
+    background-color: #b91212;
+    /*background-color: yellow;*/
+    position:relative;
+}
+.vCbox{
+    padding:20px;
+    /*border: 1px solid #000;*/
+    position:absolute;
+    bottom:-25px;
+    left:-24px;
+}
+.vCtrl{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background:darkgray;
+}
+/*.vCtrl div{*/
+    /*width: 8px;*/
+    /*height: 8px;*/
+    /*/!*margin: 5px 5px;*!/*/
+    /*border-radius: 50%;*/
+    /*background-color:#b91212 ;*/
+/*}*/
+.misNum{
+    width: 40px;
+    height: 18px;
+    float: left;
+    margin-top: 13px;
+    text-align: center;
+    font-size:12px;
+    padding-top: 3px;;
+    color:#fff;
+    background:#202020;
+    border-radius:0 20px 20px 0;
+}
+/*����ģʽ ��������*/
+.playType{
+    width: 70px;
+    height: 24px;
+    padding-top:6px;
+    background:#000;
+    border-radius:10px;
+    text-align: center;
+    color:#fff;
+    font-size:12px;
+    position:absolute;
+    top:-35px;
+    right:80px;
+    display:none;
+    z-index: 2;
+}
+/*�����б�*/
+.playList{
+    width: 1000px;
+    height: 300px;
+    position:absolute;
+    top:-300px;
+    right:50px;
+    border-radius:10px 10px 0 0;
+    display:none;
+}
+.playListLeft{
+    float:left;
+    width: 549px;
+    height: 100%;
+    background:#1f1e1c;
+    border-radius:10px 0px 0 0;
+    border-right: 1px solid #000000;
+}
+.playListRight{
+    float:right;
+    width: 449px;
+    height: 100%;
+    background: #1a1a19;
+    border-radius:0px 10px 0 0;
+    border-left: 1px solid #000000;
+}
+
+.playHead{
+    width: 100%;
+    height: 28px;
+    background:#212121;
+    border-radius:10px 10px 0 0;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+    padding-top: 12px;;
+    position:relative;
+}
+.playClear,.playExit{
+    position:absolute;
+    top:12px;
+    right:20px;
+    color:darkgray;
+}
+.playClear img,.playExit img{
+    width: 20px;
+    height: 20px;
+    vertical-align: -4px;
+}
+/*���Ÿ����б�*/
+.playSong{
+    width: 100%;
+    height: 260px;
+    overflow: auto;
+    /*border: 1px solid #fff;*/
+}
+.playSong li{
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    line-height:25px;
+    color:darkgray;
+    position:relative;
+    /*border: 1px solid #ffffff;*/
+}
+.playSong li div:first-child{
+    float: left;
+    width: 320px;
+    padding-left: 30px;
+    /*border: 1px solid red;*/
+}
+.playSong li div:nth-child(2){
+    width: 120px;
+    float: left;
+}
+.playSong li div:nth-child(3){
+    width: 79px;
+    float: left;
+}
+.playSongCtrl,.playNow{
+    height: 22.5px;
+    padding-top: 2.5px;
+    position:absolute;
+    top:0;
+    left:300px;
+    display:none;
+
+}
+.playSongCtrl img,.playNow img{
+    width: 14px;
+    height: 14px;
+}
+.playNow{
+    position:absolute;
+    top:0;
+    left:10px;
+}
+/*�洢����ͼƬ*/
+.playSingerImg,.pLrc{
+    position:absolute;
+    display: none;
+}
+/*���*/
+.playLyric{
+    width: 100%;
+    height: 260px;
+    overflow: auto;
+    font-size:12px;
+    color:white;
+}
+.playLyric ul{
+    padding-top: 20px;
+}
+.playLyric li{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    inline-height:25px;
+    /*border: 1px solid #000;*/
+}
